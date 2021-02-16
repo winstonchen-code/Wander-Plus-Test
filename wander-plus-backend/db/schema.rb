@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 2021_02_14_012317) do
 
   create_table "locations", force: :cascade do |t|
-    t.string "name"
+    t.string "city"
+    t.string "country"
     t.string "image_url"
-    t.string "slug"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
