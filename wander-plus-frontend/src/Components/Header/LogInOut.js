@@ -26,7 +26,8 @@ return (
 <div className='App' ref={outside}>
   <button onLick ={(e) => setIsOpen(!isOpen)}> toggler modal</button>
   {isOpen ? (
-  <div className="modal"> <p> modal is opennnn </p>
+  <div className="modal">
+   <p> modal is opennnn </p>
   <h1> its opened</h1>
 
   </div>
