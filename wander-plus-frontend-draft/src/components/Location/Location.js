@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react'
 import axios from 'axios';
 import Header from './Header'
 import ReviewForm from './ReviewForm'
+import Review from './Review'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -52,11 +53,36 @@ function Location(props) {
     const handleSubmit = (e) => {
         e.preventDefault()
         
-        const location_id = location.id
-        axios.post('http://localhost:3000/reviews', {review, location_id})
-        .then(resp => {debugger
+        // const location_id = location.id
+        review.location_id = location.id
+        review.user_id = 4
+        // console.log(review)
+        axios.post('http://localhost:3000/reviews', {review})
+        .then(resp => {
+            const included = [...location.reviews, resp.data ]
+            console.log(included)
+            setLocation({...location, included})
+            setReview({title: '', description: '', score: 0})
         })
-        .catch(resp => {})
+        .catch(resp => console.log (resp))
+    }
+
+    const setRating = (score, e) => {
+        e.preventDefault()
+        
+        setReview({...review, score})
+    }
+
+    let reviews
+    if (loaded && location.reviews){
+    reviews = location.reviews.map( ( item, index ) => {
+        return(
+            <Review
+                key={index} 
+                attributes={item}
+            />
+        )
+    })
     }
 
     return (
@@ -73,13 +99,14 @@ function Location(props) {
                         reviews={location.reviews}
                     />
                     
-                    <div className="reviews"></div>
+                    {reviews}
                 </Main>
             </Column>
             <Column>
                 <ReviewForm
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}
+                    setRating={setRating}
                     attributes={location}
                     review={review}
                 />
