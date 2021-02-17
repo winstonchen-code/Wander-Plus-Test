@@ -3,4 +3,9 @@ Rails.application.routes.draw do
   get '/locations', to: 'locations#index' 
   get '/reviews', to: 'reviews#index'
   get '/locations/:id', to: 'locations#show'
+
+  # post "/login", to: "auth#log_in"
+  post '/login', to: 'auth#login'
+  post '/auto_login', to: 'auth#auto_login'
+  get '/logged_in', to: 'application#logged_in?'
 end

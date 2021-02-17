@@ -5,8 +5,8 @@ import styled from 'styled-components'
 
 const Home = styled.div`
     text-align: center;
-    max-width: 1200px;
-    margin-left: 10px;
+    max-width: 1440px;
+    margin-left: 40px;
     margn-right: 10px;
 `
 const Header = styled.div`
