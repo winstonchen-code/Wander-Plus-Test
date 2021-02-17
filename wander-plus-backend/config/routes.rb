@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/locations', to: 'locations#index' 
   get '/reviews', to: 'reviews#index'
   get '/locations/:id', to: 'locations#show'
+  post '/reviews', to: 'reviews#create'
 end

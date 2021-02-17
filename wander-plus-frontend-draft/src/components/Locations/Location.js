@@ -41,7 +41,7 @@ function Location(props) {
                 <img src={props.item.image_url} alt={props.item.city}/>
             </LocationImage>
             <LocationCity>{props.item.city}, {props.item.country}</LocationCity>
-            <div className = "location-score">{props.avg_score}</div>
+            <div className = "location-score">{props.item.avg_score}</div>
             <LinkWrapper>
                 <Link to={`/locations/${props.item.id}`}>View Location</Link>
             </LinkWrapper>
