@@ -3,6 +3,7 @@ import Locations from './components/Locations/Locations';
 import Location from './components/Location/Location';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+
 function App() {
   return (
     <Router>
