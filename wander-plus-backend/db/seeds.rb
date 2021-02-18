@@ -10,16 +10,16 @@ Location.destroy_all
 User.destroy_all
 Review.destroy_all
 
-Location.create(city: "Hawaii", country: "United States", image_url: "https://www.gannett-cdn.com/presto/2020/08/19/USAT/b3c017d4-716c-4aee-afda-91f330062315-VPC_HAWAII_EXTENDS_QUARANTINE_wide_getty.jpg?crop=1080%2C1080%2Cx415%2Cy0&quality=10")
-Location.create(city: "Paris", country: "France", image_url: "https://www.libertytravel.com/sites/default/files/styles/full_size/public/france-h.jpg?itok=7ffg3Nv8")
-Location.create(city: "Santorini", country: "Greece", image_url: "https://cdn.architecturendesign.net/wp-content/uploads/2015/10/AD-Stunning-Photos-Of-Santorini-Greece-09.jpg")
-Location.create(city: "New York City", country: "United States", image_url: "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fplaces%2Fnew-york-ny_416x416.jpg")
-Location.create(city: "Venice", country: "Italy", image_url: "https://img.travelawaits.com/filter:centercrop/quill/2/b/2/5/3/6/2b253633748caabab2c9933173a66d6000756625.jpg?w=800&h=800")
-Location.create(city: "Rome", country: "Italy", image_url: "https://img.travelawaits.com/filter:centercrop/quill/f/c/6/a/a/8/fc6aa8b0336b99d781294590d034f9202dfd37dd.jpg?w=800&h=800")
-Location.create(city: "Hong Kong", country: "China", image_url: "https://static01.nyt.com/images/2020/06/03/world/03hongkong-damages-1/03hongkong-damages-1-mobileMasterAt3x.jpg")
-Location.create(city: "Bangkok", country: "Thailand", image_url: "https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Bangkok_Thailand_HERO_GettyImages_HERO_1920x1280.jpg")
-Location.create(city: "London", country: "England", image_url: "https://www.syracuse.edu/wp-content/uploads/london-large-image-1100x733.jpg")
-Location.create(city: "Tokyo", country: "Japan", image_url: "https://i.insider.com/5d26280921a86107bb51bd92?width=1067&format=jpeg")
+Location.create(city: "Hawaii", country: "United States", price: 4000, image_url: "https://www.gannett-cdn.com/presto/2020/08/19/USAT/b3c017d4-716c-4aee-afda-91f330062315-VPC_HAWAII_EXTENDS_QUARANTINE_wide_getty.jpg?crop=1080%2C1080%2Cx415%2Cy0&quality=10")
+Location.create(city: "Paris", country: "France", price:3500, image_url: "https://www.libertytravel.com/sites/default/files/styles/full_size/public/france-h.jpg?itok=7ffg3Nv8")
+Location.create(city: "Santorini", country: "Greece", price: 3500, image_url: "https://cdn.architecturendesign.net/wp-content/uploads/2015/10/AD-Stunning-Photos-Of-Santorini-Greece-09.jpg")
+Location.create(city: "New York City", country: "United States",price: 2000, image_url: "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fplaces%2Fnew-york-ny_416x416.jpg")
+Location.create(city: "Venice", country: "Italy",price: 3000, image_url: "https://img.travelawaits.com/filter:centercrop/quill/2/b/2/5/3/6/2b253633748caabab2c9933173a66d6000756625.jpg?w=800&h=800")
+Location.create(city: "Rome", country: "Italy",price: 2500, image_url: "https://img.travelawaits.com/filter:centercrop/quill/f/c/6/a/a/8/fc6aa8b0336b99d781294590d034f9202dfd37dd.jpg?w=800&h=800")
+Location.create(city: "Hong Kong", country: "China",price: 2000, image_url: "https://static01.nyt.com/images/2020/06/03/world/03hongkong-damages-1/03hongkong-damages-1-mobileMasterAt3x.jpg")
+Location.create(city: "Bangkok", country: "Thailand",price: 2000, image_url: "https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Bangkok_Thailand_HERO_GettyImages_HERO_1920x1280.jpg")
+Location.create(city: "London", country: "England",price: 2800, image_url: "https://www.syracuse.edu/wp-content/uploads/london-large-image-1100x733.jpg")
+Location.create(city: "Tokyo", country: "Japan",price: 2200, image_url: "https://i.insider.com/5d26280921a86107bb51bd92?width=1067&format=jpeg")
 
 
 User.create(email: 'lala@gmail.com', password: '123')
