@@ -1,6 +1,7 @@
 import React from 'react'
 // import styled from 'styled-components'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
+import Rating from '../Rating/Rating'
 
 // const Card = styled.div`
 //     border: 1px solid #efefef;
@@ -41,7 +42,8 @@ function Location(props) {
                 <img src={props.item.image_url} alt={props.item.city}/>
             </LocationImage>
             <LocationCity>{props.item.city}, {props.item.country}</LocationCity>
-            <div className = "location-score">{props.avg_score}</div>
+            <Rating score={props.item.avg_score}/>
+            {/* <div className = "location-score">{props.item.avg_score}</div> */}
             <LinkWrapper>
                 <Link to={`/locations/${props.item.id}`}>View Location</Link>
             </LinkWrapper>
