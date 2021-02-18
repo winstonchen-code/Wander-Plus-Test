@@ -8,10 +8,12 @@ import Home from './Components/Header/pages/Home'
 import Locations from './Components/Locations/Locations';
 import Location from './Components/Location/Location';
 import Login from './Components/LogInOut/Login'
+import Basket from './Components/Cart/Basket'
 
 
 
 export default class App extends Component {
+  // const [cartItems, setCartItems] = useState([])
 
   state = {
     user: {},
@@ -79,6 +81,7 @@ export default class App extends Component {
             <Route path='/' exact component= {Home} />
             <Route exact path="/location" component={Locations}/>
             <Route exact path="/locations/:id" component={Location}/>
+            <Route exact path="/user/cart" component={Basket}/>
             <Route exact path="/login" component={Login} />
 
             <Route exact path="/login">
