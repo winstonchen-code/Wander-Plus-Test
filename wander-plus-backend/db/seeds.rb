@@ -22,7 +22,8 @@ Location.create(city: "London", country: "England", image_url: "https://www.syra
 Location.create(city: "Tokyo", country: "Japan", image_url: "https://i.insider.com/5d26280921a86107bb51bd92?width=1067&format=jpeg")
 
 
-User.create ()
+User.create(email: 'lala@gmail.com', password: '123')
+User.create(email: 'jon@gmail.com', password: '123')
 
 Review.create(title: 'Best city to visit!', description: "There were so many places to visit, non-stop fun! Be prepared for an amazing vacation!", score: 5, location_id: Location.all.sample.id, user_id: User.all.sample.id)
 Review.create(title: 'Top 5 city', description: 'Weather was great during our time here and the fun never stopped.', score: 4, location_id: Location.all.sample.id, user_id: User.all.sample.id)

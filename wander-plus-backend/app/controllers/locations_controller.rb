@@ -1,4 +1,7 @@
 class LocationsController < ApplicationController
+    
+    skip_before_action :authorized, only: [:index]
+    
     def index
         render json: Location.all.to_json({
             include: {

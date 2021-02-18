@@ -13,7 +13,7 @@ buttonSize}) => {
 
 
   return (
-    < Link to='/sign-u' className='btn-mobile'>
+    < Link to='/login' className='btn-mobile'>
       <button className ={`btn ${checkButtonStyle} ${checkButtonSize}`}
       onClick={onClick}
       type={type}
