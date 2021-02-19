@@ -1,22 +1,22 @@
 class UsersController < ApplicationController
 
-  skip_before_action :authorized, only: [:create]
+#   skip_before_action :authorized, only: [:create]
    
-  def create
-    user = User.create(user_params)
+#   def create
+#     user = User.create(user_params)
    
-    if user.valid?
-      render json: { user: user, status: :created}
-    else
-      render json: { error: 'failed to create user', status: :not_acceptable}
-    end
-  end
+#     if user.valid?
+#       render json: { user: user, status: :created}
+#     else
+#       render json: { error: 'failed to create user', status: :not_acceptable}
+#     end
+#   end
 
-private
+# private
   
-  def user_params
-    params.require(:user).permit(:email, :password)
-  end
+#   def user_params
+#     params.require(:user).permit(:email, :password)
+#   end
 
 
 end

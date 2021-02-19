@@ -55,7 +55,7 @@ function Location(props) {
         
         // const location_id = location.id
         review.location_id = location.id
-        review.user_id = 5
+        review.user_id = 3
         // console.log(review)
         axios.post('http://localhost:3000/reviews', {review})
         .then(resp => {
