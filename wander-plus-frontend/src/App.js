@@ -9,7 +9,7 @@ import Locations from './Components/Locations/Locations';
 import Location from './Components/Location/Location';
 import Login from './Components/LogInOut/Login'
 import Basket from './Components/Cart/Basket'
-
+import About from './Components/About/About'
 
 
 export default class App extends Component {
@@ -82,6 +82,7 @@ export default class App extends Component {
             <Route exact path="/location" component={Locations}/>
             <Route exact path="/locations/:id" component={Location}/>
             <Route exact path="/user/cart" component={Basket}/>
+            <Route exact path="/about" component={About}/>
             <Route exact path="/login" component={Login} />
 
             <Route exact path="/login">

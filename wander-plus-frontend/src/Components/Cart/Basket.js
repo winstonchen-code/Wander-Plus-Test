@@ -7,10 +7,10 @@ import location from '../Locations/Location'
 
 
 
-const Card = styled.div`
-    border: 1px solid #efefef;
-    background: #fff;
-`
+// const Card = styled.div`
+//     border: 1px solid #efefef;
+//     background: #fff;
+// `
 const LocationImage = styled.div`
     padding-top: 10px;
     img{
@@ -20,18 +20,40 @@ const LocationImage = styled.div`
         border: 5px solid #efefef;
     }
 `
-const LocationCity = styled.div`
-    padding: 20px 0 10px 0;
+
+const Card = styled.div`
+    padding: 55px 100px 50px 0;
+    font-size: 21px;
+
+    img{
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: -8px;
+        margin-left: 30px;
+    }
+    h1{
+      margin-left: 500px;
+    }
+    
 `
 
-const buttonWrap = styled.div`
+const LocationCity = styled.div`
+    padding: 20px 0 10px 0;
+    margin-left: 30px;
+`
+
+const LinkWrapper = styled.div`
     margin: 20px 0 20px 0;
     height: 50px;
 
     a {
         color: #fff;
-        background: #000;
+        background: #;
         border-raidus: 4px;
+        border: 0.1rem #404040 solid;
+        background-color: #f0c040;
         padding: 10px 50px;
         border: 1px solid #000;
         width: 100%;
@@ -82,12 +104,11 @@ export default function Basket (props) {
             <LocationCity>$ {props.location.state.item.price}</LocationCity>
             {/* <div className = "location-score">{props.avg_score}</div> */}
             
-            <buttonWrap>
-            <button  onClick={onRemove}  >remove</button>
-            </buttonWrap>
-            <buttonWrap>
-                <Link to={`/location/form/ ${props.location.state.item.id}`}> Chekout </Link>
-            </buttonWrap>
+            <LinkWrapper>
+            <Link  onClick={onRemove}  >remove</Link>
+            <br /> <br /> <br />
+                <Link to={`/location/form/ ${props.location.state.item.id}`}> Checkout </Link>
+            </LinkWrapper>
             </Card>
             
   )

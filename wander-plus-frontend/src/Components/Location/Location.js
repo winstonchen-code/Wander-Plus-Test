@@ -5,6 +5,7 @@ import ReviewForm from './ReviewForm'
 import Review from './Review'
 import styled from 'styled-components'
 
+
 const Wrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
@@ -42,12 +43,12 @@ function Location(props) {
             setLoaded(true)
         })
         .catch( resp => console.log (resp) )
-    }, [props.match.params.id])
+    }, [])
 
     const handleChange = (e) => {
         e.preventDefault()
         setReview(Object.assign({}, review, {[e.target.name]: e.target.value}))
-        console.log('review:', review)
+        // console.log('review:', review)
     }
 
     const handleSubmit = (e) => {
@@ -55,51 +56,7 @@ function Location(props) {
         
         // const location_id = location.id
         review.location_id = location.id
-        review.user_id = 5
-        // console.log(review)
-        axios.post('http://localhost:3000/reviews', {review})
-        .then(resp => {
-            const newLocation = Object.assign({}, location)
-            // const included = [...location.reviews, resp.data ]
-            newLocation.reviews = [...newLocation.reviews, resp.data]
-            // const included = [...location.reviews, resp.data ]
-            // console.log(included)
-            setLocation(newLocation)
-            setReview({title: '', description: '', score: 0})
-        })
-        .catch(resp => console.log (resp))
-    }
-
-    const setRating = (score, e) => {
-        e.preventDefault()
-
-        setReview({...review, score})
-    }
-
-    let reviews
-    if (loaded && location.reviews){
-    reviews = location.reviews.map( ( item, index ) => { console.log(item)
-        return(
-            <Review
-                key={index} 
-                attributes={item}
-            />
-        )
-    })
-    }
-
-    const handleChange = (e) => {
-        e.preventDefault()
-        setReview(Object.assign({}, review, {[e.target.name]: e.target.value}))
-        console.log('review:', review)
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        
-        // const location_id = location.id
-        review.location_id = location.id
-        review.user_id = 5
+        review.user_id = 3
         // console.log(review)
         axios.post('http://localhost:3000/reviews', {review})
         .then(resp => {
