@@ -1,39 +1,39 @@
 import React from 'react'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import Rating from '../Rating/Rating'
 
-// const Card = styled.div`
-//     border: 1px solid #efefef;
-//     background: #fff;
-// `
-// const LocationImage = styled.div`
-//     padding-top: 10px;
-//     img{
-//         height: 200px;
-//         width: 200px;
-//         border-radius: 100%;
-//         border: 5px solid #efefef;
-//     }
-// `
-// const LocationCity = styled.div`
-//     padding: 20px 0 10px 0;
-// `
+const Card = styled.div`
+    border: 1px solid #efefef;
+    background: #fff;
+`
+const LocationImage = styled.div`
+    padding-top: 10px;
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        border: 5px solid #efefef;
+    }
+`
+const LocationCity = styled.div`
+    padding: 20px 0 10px 0;
+`
 
-// const LinkWrapper = styled.div`
-//     margin: 20px 0 20px 0;
-//     height: 50px;
+const LinkWrapper = styled.div`
+    margin: 20px 0 20px 0;
+    height: 50px;
 
-//     a {
-//         color: #fff;
-//         background: #000;
-//         border-raidus: 4px;
-//         padding: 10px 50px;
-//         border: 1px solid #000;
-//         width: 100%;
-//         text-decoration: none;
-//     }
-// `
+    a {
+        color: #fff;
+        background: #000;
+        border-raidus: 4px;
+        padding: 10px 50px;
+        border: 1px solid #000;
+        width: 100%;
+        text-decoration: none;
+    }
+`
 
 function Location(props) {
     return (

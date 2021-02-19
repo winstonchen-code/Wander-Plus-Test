@@ -13,6 +13,6 @@
 }
   
 .star-wrapper::before, .stars::before {
-    font-family: 'Font Awesome';
-    content: "\f005 \0020 \f005 \0020 \f005 \0020 \f005 \0020 \f005";
+    /* font-family: 'Font Awesome'; */
+    content: "✈ \0020 ✈ \0020 ✈ \0020 ✈ \0020 ✈";
 }

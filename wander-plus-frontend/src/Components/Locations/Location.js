@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Link } from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
+import Rating from '../Rating/Rating'
 
 const Card = styled.div`
     border: 1px solid #efefef;
@@ -65,6 +66,8 @@ function Location(props) {
             <LocationCity>{props.item.city}, {props.item.country}</LocationCity>
             <LocationCity>$ {props.item.price}</LocationCity>
             <div className = "location-score">{props.avg_score}</div>
+            <Rating score={props.item.avg_score}/>
+            {/* <div className = "location-score">{props.item.avg_score}</div> */}
             <LinkWrapper>
                 <Link to={`/locations/${props.item.id}`}>View Location</Link>
             </LinkWrapper>
