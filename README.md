@@ -16,3 +16,4 @@ I plan to build out more features of the application so that individuals can acc
 
 ### Built by 
 * [Winston Chen](https://www.linkedin.com/in/winston-c/)
+* Rahel Hagos
