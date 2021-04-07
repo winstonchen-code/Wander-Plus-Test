@@ -2,9 +2,7 @@
 
 ## INSPIRATION
 
-During the Covid-19 pandemic, I realized a lot of people, myself included, were feeling stressed and overwhelmed by everything that was going on. Stress can affect the immune system, so taking steps to reduce your stress in a healthy way is important.
-
-One way to lessen worry is to ground yourself in the present moment through mindfulness. Mindfulness is a great technique that can help reduce stress during challenging times. You can practice mindfulness by sitting quietly and focusing on your breathing and senses. This is where this app comes in. 
+An app that came out of the desire to travel while stuck at home during quarantine. We wanted to create an application so that we can plan our next post pandemic trip.  
 
 ## WHAT IT DOES
 
