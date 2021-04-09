@@ -20,6 +20,9 @@ Location.create(city: "Hong Kong", country: "China", image_url: "https://static0
 Location.create(city: "Bangkok", country: "Thailand", image_url: "https://253qv1sx4ey389p9wtpp9sj0-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/Bangkok_Thailand_HERO_GettyImages_HERO_1920x1280.jpg")
 Location.create(city: "London", country: "England", image_url: "https://www.syracuse.edu/wp-content/uploads/london-large-image-1100x733.jpg")
 Location.create(city: "Tokyo", country: "Japan", image_url: "https://i.insider.com/5d26280921a86107bb51bd92?width=1067&format=jpeg")
+Location.create(city: "Austin", country: "United States", image_url: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,g_xy_center,h_640,q_75,w_640,x_5990,y_1546/v1/clients/austin/Austin_Skyline_Panoramic_from_East_credit_JOSEPH_HAUBERT_expires_10_1_2020_4853d9d6-de3d-4968-aff5-4d9f6119b7c1.jpg")
+Location.create(city: "Washington DC", country: "United States", image_url: "https://img.travelawaits.com/filter:centercrop/quill/2/3/a/a/2/4/23aa249905a77c40bbb4ea4dad5f9d0a0d6f35d2.jpg?w=800&h=800")
+Location.create(city: "Cairo", country: "Egypt", image_url: "https://www.travelive.com/public/img/travel2egypt/great-sphinx-and-pyramids-of-giza-in-cairo.jpg")
 
 
 User.create(email: 'lala@gmail.com', password: '123')
