@@ -34,6 +34,7 @@ function Location(props) {
     const [loaded, setLoaded] = useState(false)
 
     useEffect (()=> {
+        console.log(props)
         const id = props.match.params.id
         const url = `http://localhost:3000/locations/${id}`
         axios.get(url)
@@ -55,7 +56,7 @@ function Location(props) {
         
         // const location_id = location.id
         review.location_id = location.id
-        review.user_id = 3
+        review.user_id = 7
         // console.log(review)
         axios.post('http://localhost:3000/reviews', {review})
         .then(resp => {
